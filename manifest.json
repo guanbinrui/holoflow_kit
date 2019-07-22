@@ -1,0 +1,30 @@
+{
+    "name": "Holoflows Kit",
+    "version": "1.0",
+    "description": "Try Holoflows Kit in real Chrome extension",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://www.baidu.com/*"],
+            "js": ["polyfill/browser-polyfill.js", "content.7c7f1dc5.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "scripts": [
+            "polyfill/browser-polyfill.js",
+            "background.ad2b032e.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "declarativeContent"
+    ],
+    "page_action": {
+
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}

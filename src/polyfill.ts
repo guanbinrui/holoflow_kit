@@ -1,0 +1,1 @@
+import 'webextension-polyfill/dist/browser-polyfill';

@@ -1,0 +1,25 @@
+{
+  "name": "holoflows_kit.test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cp_manifest": "mkdir -p dist/ && cp ./manifest.json dist/",
+    "cp_polyfill": "mkdir -p dist/ && mkdir -p dist/polyfill && cp node_modules/webextension-polyfill/dist/browser-polyfill.js ./dist/polyfill/",
+    "remove_data": "sed -i -E 's/data-//' ./dist/*.html",
+    "prestart": "npm run cp_manifest && npm run cp_polyfill",
+    "start": "parcel *.html --hmr-hostname localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@holoflows/kit": "^0.4.0",
+    "webextension-polyfill": "^0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3",
+    "web-ext-types": "^3.2.1"
+  }
+}

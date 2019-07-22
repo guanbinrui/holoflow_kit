@@ -5,5 +5,8 @@ holoflows_kit
 
 ```
 npm run start
-npm run remove_data # if you work with options.html remember execute this script in order to eliminate `data-` prefix in script tag
+
+# if you work with options.html remember to execute this command
+# which eliminate `data-` prefix in script tag
+npm run remove_data
 ```

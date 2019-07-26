@@ -16,7 +16,7 @@ npm run remove_data
 [`Holoflows Kit`](https://www.npmjs.com/package/@holoflows/kit) can be divide into two mainly portions.
 
 + A communication protocol implementation which helps exchange imformation & RPC(remote process call) between different web-extension contexts;
-+ A DOM actions bundler which helps bind a bundle of dom actions with relastic DOM nodes and redo those actions if nodes mutated later;
++ A DOM actions bundler which helps bind a bundle of dom actions with realistic DOM nodes and redo those actions if nodes mutated later;
 
 So two folders for those two mainly portions.
 
